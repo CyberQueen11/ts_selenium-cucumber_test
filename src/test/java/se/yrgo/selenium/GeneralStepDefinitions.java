@@ -8,7 +8,7 @@ import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import se.yrgo.selenium.pages.StartPage;
 
-public class GeneralStepDefinition {
+public class GeneralStepDefinitions {
     public static WebDriver driver;
     public static StartPage startPage;
 
