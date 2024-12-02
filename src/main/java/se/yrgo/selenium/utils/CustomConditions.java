@@ -1,11 +1,12 @@
-package se.yrgo;
+package se.yrgo.selenium.utils;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.Select;
 
 public final class CustomConditions {
-    private CustomConditions() {}
+    private CustomConditions() {
+    }
 
     public static ExpectedCondition<Boolean> elementHasBeenClicked(final WebElement element) {
         return ignoringAllExceptions(() -> element.click());
@@ -20,8 +21,7 @@ public final class CustomConditions {
             try {
                 func.run();
                 return true;
-            }
-            catch (Exception ex) {
+            } catch (Exception ex) {
                 return false;
             }
         };
